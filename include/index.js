@@ -51,7 +51,6 @@ window.onscriptsload = function () {
 	var host, port, password, path, token;
 
 	WebUtil.init_logging(WebUtil.getConfigVar('logging', 'warn'));
-	document.title = unescape(WebUtil.getConfigVar('title', 'noVNC'));
 	// By default, use the host and port of server that served this file
 	host = WebUtil.getConfigVar('host', window.location.hostname);
 	port = WebUtil.getConfigVar('port', window.location.port);
